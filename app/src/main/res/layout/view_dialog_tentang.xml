@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_info_outline_white_24px"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/viewPilihAlamat"
+            android:text="Tentang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close_white"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Tentang Aplikasi Flags Quiz!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorBg"
+                android:layout_width="match_parent"
+                android:layout_height="2px"></LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Flags Quiz!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Versi 1.0.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBg"
+                android:layout_width="match_parent"
+                android:layout_height="2px"></LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="Aplikasi Flags Quiz! merupakan final project dan hasil pembelajaran - Study Group Indonesia Android Kejar Batch 3."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:text="Pengembang Aplikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Haerul Muttaqin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:text="Kontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/email"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iconKontak"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/gmail"
+                    android:scaleType="centerInside"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:textColor="@color/cardview_dark_background"
+                    android:id="@+id/jenis"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:text="Email"
+                    android:layout_toRightOf="@id/iconKontak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/text"
+                    android:textSize="10dp"
+                    android:text="haerul.muttaqin@gmail.com"
+                    android:layout_toRightOf="@id/iconKontak"
+                    android:layout_below="@id/jenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/phone"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iconKontak2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/phone"
+                    android:scaleType="centerInside"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/jenis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconKontak2"
+                    android:layout_toEndOf="@+id/iconKontak2"
+                    android:layout_toRightOf="@+id/iconKontak2"
+                    android:text="Telepon"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jenis2"
+                    android:layout_toEndOf="@+id/iconKontak2"
+                    android:layout_toRightOf="@+id/iconKontak2"
+                    android:text="+6282111237599"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sms"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iconKontak3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/sms"
+                    android:scaleType="centerInside"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/jenis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconKontak3"
+                    android:layout_toEndOf="@+id/iconKontak3"
+                    android:layout_toRightOf="@+id/iconKontak3"
+                    android:text="SMS"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jenis3"
+                    android:layout_toEndOf="@+id/iconKontak3"
+                    android:layout_toRightOf="@+id/iconKontak3"
+                    android:text="+62895615773513"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wa"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iconKontak4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/wa"
+                    android:scaleType="centerInside"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/jenis4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconKontak4"
+                    android:layout_toEndOf="@+id/iconKontak4"
+                    android:layout_toRightOf="@+id/iconKontak4"
+                    android:text="WhatsApp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jenis4"
+                    android:layout_toEndOf="@+id/iconKontak4"
+                    android:layout_toRightOf="@+id/iconKontak4"
+                    android:text="082111237599"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorBg"
+                android:layout_width="match_parent"
+                android:layout_height="2px"></LinearLayout>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iak"
+                    android:src="@drawable/iak"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/iak"
+                    android:layout_toRightOf="@+id/iak"
+                    android:gravity="center"
+                    android:text="powered by" />
+                <ImageView
+                    android:id="@+id/dev"
+                    android:layout_toRightOf="@id/iak"
+                    android:src="@drawable/dev"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

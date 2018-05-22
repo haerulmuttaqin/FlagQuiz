@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="id.haerul.flagquiz.ScoreActivity">
+
+            <TextView
+                android:id="@+id/txtUlasans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="MEMUASKAN!"
+                android:textColor="#fff"
+                android:textSize="27dp" />
+
+            <RatingBar
+                android:id="@+id/rat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:progressBackgroundTint="@color/colorAccent2"
+                android:progressTint="@color/colorAccent"
+                android:secondaryProgressTint="@color/colorAccent2" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUlasans"
+                android:layout_marginTop="140dp"
+                android:gravity="center"
+                android:text="Skor Kamu"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/mScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt"
+                android:gravity="center"
+                android:text="10.0"
+                android:textColor="#fff"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/txtNilai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mScore"
+                android:gravity="center"
+                android:text="Nilai : "
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:id="@+id/txtTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtNilai"
+                android:gravity="center"
+                android:text="Top Skor : "
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+    <Button
+        android:layout_above="@id/ulang"
+        android:id="@+id/review"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Review Jawaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ulang"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Ulangi Quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

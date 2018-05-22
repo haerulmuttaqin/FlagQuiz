@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:id="@+id/viewPilihAlamat"
+            android:text="Ganti Nama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/viewPilihAlamat"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="textCapWords"
+            android:id="@+id/name"
+            android:textColor="#fff"
+            android:hint="Nama Pengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="#111"
+            android:id="@+id/save"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="SIMPAN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#cea21b"
+            android:layout_width="2px"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <TextView
+            android:textColor="#111"
+            android:id="@+id/cencel"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="BATAL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

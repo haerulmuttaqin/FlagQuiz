@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sp1">
+        <item>Pilih Warna</item>
+        <item>Putih</item>
+        <item>Orange</item>
+        <item>Hitam</item>
+        <item>Merah</item>
+    </string-array>
+    <string-array name="sp2">
+        <item>Pilih Warna</item>
+        <item>Merah</item>
+        <item>Orange</item>
+        <item>Putih</item>
+        <item>Hitam</item>
+    </string-array>
+    <string-array name="sp3">
+        <item>Pilih Warna</item>
+        <item>Hitam</item>
+        <item>Putih</item>
+        <item>Merah</item>
+        <item>Orange</item>
+    </string-array>
+</resources>

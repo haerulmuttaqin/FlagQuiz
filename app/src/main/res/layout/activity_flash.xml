@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.haerul.flagquiz.FlashActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/flags"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bgFlash"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f12195f1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:id="@+id/iconFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_flag_white"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:id="@+id/attrBanner"
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/iconFlag"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/textBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flags Quiz!"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:shadowColor="#2e2e2e"
+            android:shadowDx="1"
+            android:shadowDy="3"
+            android:shadowRadius="4"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/attrBanner"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/iconFlag"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/iconFlag"
+            android:layout_marginBottom="86dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

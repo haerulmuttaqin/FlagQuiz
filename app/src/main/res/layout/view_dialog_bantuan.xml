@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_help_outline_white_24px"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/viewPilihAlamat"
+            android:text="Bantuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close_white"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Bantuan Pengisian Quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="Anda dapat memilih point yang benar sesuai dengan masing-masing pertanyaan yang ada."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Setelah pengisian selesai dilakukan, anda dapat memeriksa jawaban anda dengan menekan Button PERIKSA JAWABAN."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Setiap soal memiliki point masing-masing, pada soal yang memiliki satu jawaban memiliki nilai 10.0, kemudian soal yang jawaban nya lebih dari satu, nilai (10.0) akan dibagi sesuai pilihan jawaban yang benar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Skor anda akan disimpan jika skor terakhir telah melebihi atau lebih besar dari Top Skor."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:text="Pada Menu Profil anda dapat melihat Skor Terakhir dan Top Skor Anda, juga melakukan perubahan Nama Pengguna, dan mereset data anda. Ketika anda mereset data, maka Nama Pengguna, Skor Terakhir dan Top Skor akan terhapus."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:text="Pengembang Aplikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

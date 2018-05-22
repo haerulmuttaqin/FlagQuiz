@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Flag Quiz</string>
+    <string name="question_1">Bendera negara manakah ini?</string>
+    <string name="question_3">Manakah yang merupakan bendera Indonesia?</string>
+    <string name="question_5">Warna apa saja yang terdapat pada bendera Brazil?</string>
+    <string name="question_6">Apa nama julukan bendera USA?</string>
+    <string name="question_7">Ini adalah bendera South Africa, ada berapakah warna yang terdapat di bendera tersebut?</string>
+    <string name="question_8">Ini adalah bendera Jerman, susunlah urutan warna yang sesuai dengan bendera tersebut!</string>
+    <string name="question_9">Manakah yang merupakan bendera New Zealand?</string>
+    <string name="question_10">Apa nama julukan bendera Indonesia? dan siapa pembuatnya?</string>
+</resources>
